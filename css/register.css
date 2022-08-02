@@ -1,0 +1,123 @@
+/* 注册页样式 */
+.header {
+    border-bottom: 3px solid #c81623;
+}
+
+.register_area {
+    margin-top: 19px;
+}
+
+
+.register_area .reg_hd {
+    height: 41px;
+    padding: 0 10px;
+    background-color: #ececec;
+}
+
+.register_area .reg_hd h3 {
+    float: left;
+    height: 41px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 41px;
+}
+
+.register_area .reg_hd p {
+    float: right;
+    height: 41px;
+    line-height: 50px;
+}
+
+/* .register_area .reg_hd p a { */
+/* display: inline-block; */
+/* height: 41px; */
+/* line-height: 41px; */
+/* line-height: 20px; */
+/* vertical-align: bottom; */
+/* } */
+
+.register_area .reg_content {
+    width: 800px;
+    height: 400px;
+    margin: 45px 0px 0px 282px;
+    /* background-color: pink; */
+}
+
+.register_area .reg_content ul li i {
+    display: inline-block;
+    width: 84px;
+    height: 36px;
+    text-align: right;
+}
+
+.register_area .reg_content ul li input {
+    width: 241px;
+    height: 36px;
+    border: 1px solid #999999;
+    outline: none;
+}
+
+.register_area .reg_content .error {
+    font-size: 12px;
+    color: #df3033;
+}
+
+.register_area .reg_content .success {
+    font-size: 12px;
+    color: green;
+}
+
+.register_area .reg_content ul li:nth-of-type(4) {
+    padding-left: 166px;
+}
+
+.register_area .reg_content ul li:nth-of-type(4) span {
+    display: inline-block;
+    width: 34px;
+    height: 14px;
+    margin-right: 3px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.ruo {
+    background-color: red;
+    margin-left: 9px;
+}
+
+.zhong {
+    background-color: green;
+}
+
+.qiang {
+    background-color: orange;
+}
+
+.register_area .reg_content>span {
+    display: inline-block;
+    height: 30px;
+    margin-left: 85px;
+    line-height: 30px;
+}
+
+.register_area .reg_content>span input {
+    vertical-align: middle;
+}
+
+.register_area .reg_content>span a {
+    color: #1ba1e6;
+}
+
+
+.register_area .reg_content>button {
+    display: block;
+    width: 200px;
+    height: 34px;
+    margin-top: 41px;
+    margin-left: 96px;
+    background-color: #c81623;
+    color: #fff;
+    font-size: 14px;
+}

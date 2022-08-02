@@ -1,0 +1,375 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: purple;
+}
+
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+    /* background-color: pink; */
+}
+
+.newsflash .news {
+    height: 165px;
+    /* background-color: purple; */
+    border: 1px solid #e4e4e4;
+}
+
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news-hd a {
+    float: right;
+    color: #666;
+}
+
+.news-hd a::after {
+    content: '\e904';
+    font-family: 'icomoon';
+}
+
+.news-bd {
+    padding: 5px 15px 0;
+}
+
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.newsflash .lifeservice {
+    height: 209px;
+    /* background-color: skyblue; */
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    overflow: hidden;
+}
+
+.newsflash .lifeservice ul {
+    width: calc(4*(63px+1px));
+}
+
+.newsflash .lifeservice ul li {
+    float: left;
+    height: 70px;
+    width: 63px;
+    padding-top: 13px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+
+.newsflash .lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 26px;
+}
+
+.newsflash .lifeservice ul li:nth-of-type(1) i {
+    background: url(../images/icons.png) no-repeat -16px -15px;
+}
+
+.newsflash .lifeservice ul li:nth-of-type(2) i {
+    background: url(../images/icons.png) no-repeat -79px -15px;
+}
+
+.newsflash .lifeservice ul li:nth-of-type(3) i {
+    background: url(../images/icons.png) no-repeat -142px -15px;
+}
+
+.newsflash .lifeservice ul li:nth-of-type(4) i {
+    background: url(../images/icons.png) no-repeat -205px -15px;
+}
+
+.newsflash .lifeservice ul li:nth-of-type(5) i {
+    background: url(../images/icons.png) no-repeat -16px -88px;
+}
+
+.newsflash .lifeservice ul li:nth-of-type(6) i {
+    background: url(../images/icons.png) no-repeat -79px -88px;
+}
+
+.newsflash .lifeservice ul li:nth-of-type(7) i {
+    background: url(../images/icons.png) no-repeat -142px -88px;
+}
+
+.newsflash .lifeservice ul li:nth-of-type(8) i {
+    background: url(../images/icons.png) no-repeat -205px -88px;
+}
+
+.newsflash .lifeservice ul li:nth-of-type(9) i {
+    background: url(../images/icons.png) no-repeat -16px -158px;
+}
+
+.newsflash .lifeservice ul li:nth-of-type(10) i {
+    background: url(../images/icons.png) no-repeat -79px -158px;
+}
+
+.newsflash .lifeservice ul li:nth-of-type(11) i {
+    background: url(../images/icons.png) no-repeat -142px -158px;
+}
+
+.newsflash .lifeservice ul li:nth-of-type(12) i {
+    background: url(../images/icons.png) no-repeat -205px -158px;
+}
+
+.newsflash .bargain {
+    margin-top: 5px;
+}
+
+/* 推荐模块制作 */
+.recom {
+    height: 163px;
+    margin-top: 10px;
+    background-color: #ebebeb;
+}
+
+.recom_hd {
+    float: left;
+    width: 207px;
+    height: 163px;
+    background-color: #5c5251;
+    text-align: center;
+    line-height: 163px;
+}
+
+.recom_bd {
+    float: left;
+    /* height: 163px; */
+}
+
+/* .recom_bd ul {
+    height: 163px;
+} */
+
+.recom_bd ul li {
+    float: left;
+    height: 163px;
+    background-color: #ebebeb;
+}
+
+/* .recom_bd ul li a {
+    position: relative;
+    display: inline-block;
+    height: 163px;
+} */
+
+.recom_bd ul li:nth-child(-n+3) a::after {
+    /* 第一种做法是利用定位把元素定位到图片链接的水平最右侧，垂直居中  */
+    /* position: absolute;
+    right: 0;
+    top: 9px; */
+
+    /* 第二种做法不需要利用定位也可以，但是我第一次实验的时候失败了，原因是因为 */
+    /* 这个::after伪元素没有垂直对齐，导致了图片出现向下偏移出a元素的情况，这是 */
+    /* 由于默认的baseline对齐方式会导致的问题 */
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 144px;
+    vertical-align: middle;
+    background-color: #dddddd;
+}
+
+/* 楼层模块floor制作 */
+.col_210 ul {
+    height: 100px;
+    padding: 0 10px 0 10px;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 86px;
+    height: 34px;
+    border-bottom: 1px solid #ededed;
+    margin: 0 3px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.col_210 {
+    width: 210px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.floor {
+    margin-top: 11px;
+}
+
+/* 每个楼层距离上一个楼层，外边距9px */
+.floor>div {
+    margin-top: 9px;
+}
+
+.floor .tongxun .box-hd {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid #c81623;
+
+}
+
+.floor .tongxun .box-hd h3 {
+    float: left;
+    height: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.floor .tongxun .box-hd ul {
+    float: right;
+}
+
+.floor .tongxun .box-hd ul li {
+    float: left;
+}
+
+.floor .tongxun .box-hd ul a {
+    padding: 0 15px;
+}
+
+.floor .tongxun .box-bd {
+    height: 363px;
+}
+
+
+.tab_list_item>div {
+    float: left;
+}
+
+.floor .tongxun .box-bd a {
+    display: block;
+}
+
+.bb {
+    /* display: block; */
+    /* border-bottom: 1px solid #ccc; */
+    border: 1px solid #ccc;
+}
+
+/* 楼层>电脑包公 */
+/* .floor .office {
+    background-color: pink;
+} */
+
+.floor .office .box-hd {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid #c81623;
+}
+
+.floor .office .box-hd h3 {
+    float: left;
+    height: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.floor .office .box-hd .tab_list {
+    float: right;
+}
+
+.floor .office .box-hd .tab_list ul li {
+    float: left;
+}
+
+.floor .office .box-hd .tab_list ul li a {
+    padding: 0 15px;
+}
+
+.floor .office .box-bd {
+    height: 359px;
+}
+
+.floor .office .box-bd .tab_list_item>div {
+    float: left;
+    height: 359px;
+}
+
+.floor .office .box-bd .div1 {
+    width: calc(100% - 328px - 3*220px);
+    padding-left: 15px;
+    /* background-color: purple; */
+}
+
+.floor .office .box-bd .div1 ul li {
+    float: left;
+    width: 86px;
+    height: 33px;
+    margin-right: 12px;
+}
+
+.floor .office .box-bd .div1 ul li a {
+    display: inline-block;
+    width: 86px;
+    height: 33px;
+    border-bottom: 1px solid #ededed;
+    font-size: 12px;
+    color: #666;
+    line-height: 33px;
+    text-align: center;
+}
+
+.floor .office .box-bd .div1 div a {
+    display: block;
+    margin-top: 15px;
+}
+
+
+.floor .office .box-bd .div2 {
+    width: 328px;
+    background-color: aqua;
+}
+
+.floor .office .box-bd .div3 {
+    width: 220px;
+    background-color: blue;
+}
+
+.floor .office .box-bd .div4 {
+    width: 220px;
+    background-color: pink;
+}
+
+.floor .office .box-bd .div5 {
+    width: 220px;
+    background-color: yellow;
+}

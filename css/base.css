@@ -1,0 +1,76 @@
+/* 初始化样式 */
+
+/* 初始去除外边距和内边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* 去除掉em和i标签默认的字体倾斜效果 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去除掉列表项元素的列表样式 */
+li {
+    list-style: none
+}
+
+/* 去除掉图片添加边框的效果，并且加上垂直居中对齐效果 */
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+/* 按钮元素光标效果为手指光标 */
+button {
+    cursor: pointer
+}
+
+/* 链接的文字元素和没有各种线 */
+a {
+    color: #666;
+    text-decoration: none
+}
+
+/* 链接的鼠标悬停时，文字颜色 */
+a:hover {
+    color: #c81623
+}
+
+/* 设置按钮和输入元素的初始化字体 */
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    border: none;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+/* 自定义的隐藏类hide和none */
+.hide,
+.none {
+    display: none
+}
+
+/* 利用伪元素after清理浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+/* 兼容ie6，ie7 */
+.clearfix {
+    *zoom: 1
+}

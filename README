@@ -1,0 +1,69 @@
+一、项目文件结构：
+	images/：用于存放一些装饰性，不经常变更的图片，背景。
+	upload/: 用于存放产品图片，经常发生变更。
+	css/: 用于存放样式文件
+	   css/base.css：用于初始化样式
+	   css/common.css: 用于各个页面的一些通用样式
+	js/: 用于存放js文件
+	fonts/: 用于存放字体文件
+	index.html：项目首页
+	favicon.ico: 浏览器的不同网站页面标签上的icon图标；
+				 favicon制作过程：
+					  1、找到一张用作ico的图片（任意图片格式都可）
+					  2、打开https://www.bitbug.net/
+					  3、选取1找到的图片，并选择想要生成的favicon的尺寸
+					  4、通过<link rel="shortcut icon" href="favicon.ico" />，把ico文件引入（首选48*48）。
+					  
+	
+					 
+二、搜索引擎优化（SEO）
+	主要是针对TDK（title，description，keyword），就要是提升自然搜索排名，这是
+	针对浏览器的一些搜索规则而所做的相关优化。
+	
+	下面是通过京东的案例修改得到我们的品优购相关介绍：
+	<title>品优购-正品低价、品质保障、配送及时、轻松购物！</title>
+    <meta name="description" content="品优购-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。"/>
+    <meta name="Keywords" content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜,品优购"/>
+	
+三、初始化样式
+	主要是针对一些默认元素的布局样式做一些我们项目相关的样式初始化；参考京东的案例：
+		
+	这是初始化样式的引入：
+		<link href="//misc.360buyimg.com/mtd/pc/index_2019/1.0.0/static/css/first-screen.chunk.css" rel="stylesheet"/>
+		
+	打开之后我们搜索body，就找出初始化样式咯：
+		*{margin:0;padding:0}		
+		em,i{font-style:normal}
+		li{list-style:none}
+		img{border:0;vertical-align:middle}
+		button{cursor:pointer}
+		a{color:#666;text-decoration:none}
+		a:hover{color:#c81623}
+		button,input{font-family:Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif}
+		body{-webkit-font-smoothing:antialiased;background-color:#fff;font:12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;color:#666}
+		
+		.hide,.none{display:none}
+		.clearfix:after{visibility:hidden;clear:both;display:block;content:".";height:0}
+		
+		.clearfix{*zoom:1}
+		
+四、logo SEO
+	4.1 logo里面首先放一个h1标签，目的是为了提权，告诉搜索引擎，这个地方很重要。
+	
+	4.2 h1里面再放一个链接，可以返回首页，把logo的背景图片给链接即可。
+
+	4.3 为了搜索引擎收录我们，我们链接里面要放文字（网站名称），但是文字不要显示出来。
+		（1）方法1：text-indent移到盒子的外面（text-indent:9999px）,然后overflow:hidden;
+		（淘宝的做法）
+		
+		（2）方法二：直接给font-size:0;就看不到文字了，京东的做法。
+		
+	4.4 最后给链接一个title属性，这样鼠标放到logo上就可以看到提示文字了。
+	
+	
+	
+	
+
+
+	
+	

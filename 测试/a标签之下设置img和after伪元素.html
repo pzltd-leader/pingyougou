@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a标签之下设置img和after伪元素</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .clearfix::after {
+            content: '锄禾日当午，汗滴禾下土。 谁知盘中餐， 粒粒皆辛苦。锄禾日当午，汗滴禾下土。 谁知盘中餐， 粒粒皆辛苦。锄禾日当午，汗滴禾下土。 谁知盘中餐， 粒粒皆辛苦。';
+            display: inline;
+            height: 0px;
+            /* clear: both; */
+            visibility: visible;
+            font-size: 12px;
+        }
+
+        div {
+            background-color: pink;
+        }
+
+        div a {
+            background-color: #ebebeb;
+        }
+
+        div ul li:nth-child(odd) {
+            float: left;
+            list-style: none;
+            background-color: #ebebeb;
+        }
+
+
+        div ul li:nth-child(even) {
+            float: right;
+            list-style: none;
+            background-color: #ebebeb;
+        }
+
+        div li a {
+            display: block;
+        }
+
+        div li a img {
+            vertical-align: middle;
+        }
+
+        div ul li:nth-child(-n+3) a::after {
+            display: inline-block;
+            content: '';
+            width: 1px;
+            height: 144px;
+            background-color: #dddddd;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="clearfix">
+            <li><a href="#"><img src="images/recom_bd_1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/recom_bd_2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/recom_bd_3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/recom_bd_4.jpg" alt=""></a></li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
